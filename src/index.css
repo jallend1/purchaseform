@@ -18,4 +18,39 @@ code {
   background-image: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%,
       rgba(9, 9, 121, 1) 35%,
       rgba(0, 212, 255, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
+}
+
+.form-tab {
+  display: none;
+}
+
+.form-tab.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 600px;
 }
