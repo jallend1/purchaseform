@@ -24,8 +24,9 @@ code {
   justify-content: center;
 }
 
-.container {
-  width: 600px;
+main.container {
+  width: 400px;
+  border-radius: 5px;
 }
 
 form {
@@ -34,7 +35,8 @@ form {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin: auto;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
 }
 
 .form-tab {
@@ -48,9 +50,15 @@ form {
   justify-content: center;
 }
 
+.form-tab-header-title>label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .form-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 600px;
 }

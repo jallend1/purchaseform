@@ -77,11 +77,13 @@ function App() {
 
   return (
     <div className="App">
-      <main className="container">
+      <main className="container bg-light">
         <form>
           <div className="form-tab">
             <div className="form-tab-header-title">
               <label htmlFor="item-type">What type of item are you suggesting?</label>
+            </div>
+            <div className="form-text">
               <select className="form-select"
                 aria-label="Item Type"
                 id="item-type"
@@ -111,10 +113,6 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="form-navigation">
-            <button type="button" className="btn btn-primary" onClick={handlePreviousClick}>Previous</button>
-            <button type="button" className="btn btn-primary" onClick={handleNextClick}>Next</button>
-          </div>
 
 
 
@@ -124,6 +122,10 @@ function App() {
             {errorMessage}
           </div>
         }
+        <div className="form-navigation">
+          <button type="button" className="btn btn-primary" onClick={handlePreviousClick}>Previous</button>
+          <button type="button" className="btn btn-primary" onClick={handleNextClick}>Next</button>
+        </div>
 
       </main>
     </div>
