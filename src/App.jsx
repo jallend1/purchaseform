@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Explainer from './Components/Explainer';
 
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -113,9 +114,6 @@ function App() {
               </div>
             </div>
           </div>
-
-
-
         </form>
         {errorMessage &&
           <div className="alert alert-danger" role="alert">
@@ -128,6 +126,9 @@ function App() {
         </div>
 
       </main>
+      <footer>
+        <Explainer currentQuestion={currentQuestion} />
+      </footer>
     </div>
   );
 }
